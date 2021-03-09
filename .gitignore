@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+/castaneda-back/node_modules/
+/castaneda-front/node_modules/
+
 # compiled output
 /dist
 /public
@@ -7,9 +10,6 @@
 /out-tsc
 # Only exists if Bazel was run
 /bazel-out
-
-# dependencies
-/node_modules
 
 # profiling files
 chrome-profiler-events*.json
@@ -45,3 +45,4 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
