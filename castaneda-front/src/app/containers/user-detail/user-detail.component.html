@@ -1,0 +1,19 @@
+<div class="container">
+  <nav role='navigation' aria-label='main navigation' class="navbar">
+    <button class="navbar-item button m-5" (click)="deleteUser(user.id)">Delete user</button>
+  </nav>
+  <div class="block">
+    <h1 class="is-size-1 mb-5">
+      <span class="has-text-grey-light">Login: </span>
+      {{user.login}}
+    </h1>
+    <h2 class="is-size-3">
+      <span class="has-text-grey-light"> ID: </span>
+      {{user.id}}
+    </h2>
+    <h2 class="is-size-3"><span class="has-text-grey-light"> Role: </span>
+      {{user.role}}
+    </h2>
+  </div>
+</div>
+

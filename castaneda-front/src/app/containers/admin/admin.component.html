@@ -1,0 +1,22 @@
+<div class="container">
+  <h2 class="is-size-1 mb-4">Admin Page</h2>
+  <div class="buttons is-right">
+    <button class="button mb-6 is-dark" (click)="updateDueBack()">Update 'due_back"</button>
+  </div>
+  <table class="table is-striped is-hoverable is-fullwidth">
+    <thead>
+    <tr>
+      <th>Number</th>
+      <th class="has-text-centered">Title</th>
+      <th>Due Date</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let book of books">
+      <th><img src="../../../assets/image.png" alt="{{book.title}}"/><span>{{book.number}}</span></th>
+      <th>{{book.title}}</th>
+      <th>{{convertDate(book.due_back)}}</th>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,37 @@
+.hour {
+  color: rgb(6, 136, 17);
+}
+
+.hour-picker {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.clock {
+  position: relative;
+  display: flex;
+  padding: 0;
+  margin: auto;
+  box-sizing: content-box;
+  z-index: 1000;
+  font-size: 3rem;
+  border: 1.25rem solid #fff;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.4);
+  color: #bec1cd;
+  transition: cubic-bezier(0, 1.62, .92, 2) 3s;
+}
+
+.clock:hover {
+  box-shadow: none;
+  transform: rotate(calc(5 * 360deg));
+}
+
+.hour-picker_hours {
+  margin-left: auto;
+  border-radius: 5px;
+  padding: 10px;
+  background: #bec1cd;
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.4);
+}

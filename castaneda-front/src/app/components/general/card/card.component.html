@@ -1,0 +1,15 @@
+<div class="card mt-2" routerLink="/card-detail/{{card ? card.number : ''}}">
+  <div class="card-image">
+    <figure class="image">
+      <img src="assets/image-large.png" srcset="assets/image.png 300w, assets/image-large.png 1050w" sizes="1200px" alt="book"/>
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="card-available">
+      <p>Available from:</p>
+      <h4 class="is-size-5">{{due_back}}</h4>
+    </div>
+    <h2 class="card-title is-size-3">{{card?.title}}</h2>
+    <h3 class="card-number is-size-4 m-4">{{card ? number : ''}}</h3>
+  </div>
+</div>

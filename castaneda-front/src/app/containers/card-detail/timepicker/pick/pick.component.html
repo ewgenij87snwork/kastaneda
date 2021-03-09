@@ -1,0 +1,9 @@
+<ng-container *ngTemplateOutlet="text">
+
+</ng-container>
+
+<ng-template #text>
+  <button class="button berg" [ngClass]="options.typeOfMonth">
+    <span></span><strong>{{displayText}}</strong>
+  </button>
+</ng-template>

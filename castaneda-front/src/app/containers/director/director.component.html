@@ -1,0 +1,19 @@
+<div class="container">
+  <ul>
+    <li class="box button is-dark has-text-white user-li dont-hover">
+      <div class="columns user-column">
+        <div class="column is-3 mr-3 has-text-light has-text-weight-bold">Role
+        </div>
+        <span class="column is-three-quarters has-text-weight-bold has-text-light">Login</span>
+      </div>
+    </li>
+    <ng-container *ngFor="let user of users">
+      <li class="box button is-light has-text-dark user-li">
+        <a routerLink="/users/{{user ? user?.id : ''}}" class="columns has-text-grey-light">
+          <span class="column is-3 mr-3">{{user?.role}}</span>
+          <span class="column is-three-quarters has-text-weight-bold has-text-dark">{{user.login}}</span>
+        </a>
+      </li>
+    </ng-container>
+  </ul>
+</div>

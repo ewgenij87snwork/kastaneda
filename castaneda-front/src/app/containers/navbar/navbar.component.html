@@ -1,0 +1,22 @@
+<div class="navbar pt-2 mb-4">
+  <div class="container">
+    <div class="navbar-menu">
+      <div class="navbar-start">
+        <a routerLink="/" class="navbar-item button ml-3 log-button">Catalog</a>
+        <a routerLink="/admin" routerLinkActive="has-background-light" class="navbar-item button ml-3">Admin</a>
+        <a routerLink="/director" routerLinkActive="has-background-light" class="navbar-item button ml-3">Director</a>
+      </div>
+      <div class="navbar-end">
+        <a routerLink="/signup" routerLinkActive="has-background-light" class="navbar-item button ml-3"
+           *ngIf="!this.authService.isLogged()">Signup
+        </a>
+        <a routerLink="/login" routerLinkActive="has-background-light" class="navbar-item button ml-3"
+           *ngIf="!this.authService.isLogged()">Login
+        </a>
+        <a (click)="onLogout()" routerLinkActive="has-background-light" class="navbar-item button ml-3"
+           *ngIf="this.authService.isLogged()">Logout
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

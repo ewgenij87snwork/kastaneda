@@ -1,0 +1,11 @@
+<div class="timepicker">
+  <app-day-picker
+    (startDayChange)="takeDay($event)"
+    [startDay]="displayStartTime"
+    [daysPerPage]="daysPerPage">
+    <ng-template #dayTemplate let-day>
+      <app-pick text={{day.dayOfMonth}} [options]="day"></app-pick>
+    </ng-template>
+  </app-day-picker>
+  <app-hour-picker (startHourChange)="takeHour($event)"></app-hour-picker>
+</div>

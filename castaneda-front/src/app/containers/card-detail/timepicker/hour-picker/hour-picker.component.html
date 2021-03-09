@@ -1,0 +1,14 @@
+<div class="hour-picker mb-5">
+  <div class="hour-picker_hours">
+    <div class="row" *ngFor="let line of hoursPerPage">
+      <div class="columns is-multiline">
+        <div class="column" *ngFor="let hour of line">
+          <app-pick [text]="hour" (click)="selectHour(hour)" class="hour"></app-pick>
+        </div>
+      </div>
+    </div>
+  </div>
+  <span class="icon is-left clock">
+    <i class="fas fa-clock"></i>
+  </span>
+</div>

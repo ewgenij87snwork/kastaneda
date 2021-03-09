@@ -1,0 +1,36 @@
+<div class="hero is-fullheight-with-navbar">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="card column is-four-fifths-desktop">
+          <div class="is-flex is-align-items-stretch">
+            <div
+              class="card-image is-half is-flex is-flex-direction-column is-justify-content-space-between is-align-items-center">
+              <app-card [card]="card"></app-card>
+              <div class="button-wrap selected is-size-4">
+                <div>{{selectedDay}} <span class="has-text-grey">at</span> {{selectedHour}}:00</div>
+              </div>
+              <div class="button-wrap">
+                <a href="#" class="button is-large">Order</a>
+              </div>
+
+            </div>
+            <div class="card-content ml-5">
+              <div class="media mt-5">
+                <div class="media-content">
+                  <h2 class="subtitle is-6 is-italic has-text-right has-text-weight-light mb-2">{{card?.subtitle}}</h2>
+                </div>
+              </div>
+              <div class="content mb-6">
+                {{card?.description}}
+                <div class="background-icon"><span class="icon-twitter"></span></div>
+              </div>
+              <app-timepicker (displayStartDayChange)="takeDay($event)" (displayStartHourChange)="takeHour($event)"
+                              [card]="card" class="timepicker"></app-timepicker>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

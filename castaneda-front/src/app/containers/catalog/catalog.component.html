@@ -1,0 +1,16 @@
+<div class="row columns is-multiline p-1 m-1">
+  <div class="top">
+    <h1 class="is-size-1 has-text-centered">Carlos Castaneda</h1>
+    <div class="description">
+      <p class="mb-2"><b>Carlos Castaneda</b> - was an American author.</p>
+      <p>Starting with The Teachings of Don Juan in 1968, Castaneda wrote a series of books that describe his training in
+        shamanism, particularly with a group whose lineage descended from the Toltecs. The books, narrated in the first
+        person, relate his experiences under the tutelage of a man that Castaneda claimed was a Yaqui "Man of Knowledge"
+        named don Juan Matus. His 12 books have sold more than 28 million copies in 17 languages. They have been found to be
+        fiction, but supporters claim the books are either true or at least valuable works of philosophy.</p>
+    </div>
+  </div>
+  <ng-container *ngFor="let card of cards">
+    <app-card class="column" [card]="card"></app-card>
+  </ng-container>
+</div>

@@ -1,0 +1,21 @@
+<div class="day-picker">
+  <div class="row">
+    <div class="columns day-names">
+      <div class="column" *ngFor="let day of WEEKDAYS">
+        <p class="has-text-light has-text-centered mb-2">{{day}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngFor="let weeks of daysPerPage">
+    <div class="columns is-multiline  has-background-grey-lighter">
+      <div class="column" *ngFor="let day of weeks" (click)="selectDay(day)">
+        <ng-container
+          *ngIf="dayTemplateRef"
+          [ngTemplateOutlet]="dayTemplateRef"
+          [ngTemplateOutletContext]="{$implicit: day}"
+        >
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
