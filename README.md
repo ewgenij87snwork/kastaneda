@@ -1,4 +1,4 @@
-**Project for booking a book by Carlos Castaneda (FrontEnd + BackEnd)**
+**Project for booking a book by Carlos Castaneda** *(_FrontEnd + BackEnd_)*
 
 ---------------------------
 
