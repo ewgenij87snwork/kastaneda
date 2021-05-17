@@ -1,17 +1,18 @@
-**Проект о выборе и бронировании книги Карлоса Кастанеды**
+**Project on choosing and booking a book by Carlos Castaneda**
 
 ---------------------------
 
-Реализовано:
-- авторизация
-- cards-list 12 книг Карлоса Кастанеды, подгружаемых с Бекенда.
+Realized:
+- authorization
+- cards-list of 12 books by Carlos Castaneda, loaded from Backend.
+- on hovering over the book displays the day when the book will be available (returned).
 - card:
-  - краткая информация по выбранной книги.
-  - календарь для выбор дня и часов (без библиотек)
+  - brief information on the selected book.
+  - calendar for selecting the day and hours (without libraries)
 
 ---------------------------
 
-В процессе работы использовался MEAN:
+Stack:
 - Angular
 - MongoDB Atlas (Mongoose)
 - Express
